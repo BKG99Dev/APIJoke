@@ -1,9 +1,8 @@
-
 document.addEventListener("click", function(event) {
     // Checking if the button was clicked
     if (!event.target.matches("#button")) return;
 
-    fetch("https://v2.jokeapi.dev/joke/Dark")
+    fetch("https://v2.jokeapi.dev/joke/Programming")
         .then((response) => response.json())
         .then((data) => renderJoke(data))
 });
